@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Quick-Tab",
+  "description": "This.",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ]
+}

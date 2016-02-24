@@ -1,0 +1,70 @@
+.collection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+  .collection-item {
+    display: inline-block;
+    cursor: pointer;
+  }
+    .collection-item img {
+      max-width: 64px;
+      max-height: 64px;
+      margin: 0 0.2rem;
+    }
+
+.customize {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.3rem;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+  .customize:hover {
+    background-color: rgb(225, 225, 225);
+  }
+  .customize span {
+    display: block;
+    background-image: url('./icons/customize.svg');
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease;
+  }
+  .customize:hover span {
+    transform: rotate(-45deg);
+  }
+
+.edit-popup {
+  position: absolute;
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  width: 15rem;
+  height: 8rem;
+  z-index: 1;
+}
+
+  .edit-popup:before {
+    position: absolute;
+    content: "";
+    border-top: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid rgb(192, 192, 192);
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
